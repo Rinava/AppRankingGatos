@@ -157,4 +157,22 @@
       <Name>AppRankingGatos</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\confianza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\galileo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\gatovecino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\gatto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\olivia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cat.png" />
+  </ItemGroup>
 </Project>

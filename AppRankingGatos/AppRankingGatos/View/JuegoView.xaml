@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppRankingGatos.View.JuegoView"
+             Title="Ranking Gatuno"
+             BackgroundColor="#F7BB96">
+    <ContentPage.ToolbarItems>
+            <ToolbarItem Text="Reiniciar"
+                         Clicked="HandlerReiniciar" />
+        </ContentPage.ToolbarItems>
+        <StackLayout>
+            
+            <Label Text="Bienvenido al Ranking de Gatos"
+                   HorizontalTextAlignment="Center"
+                   FontSize="30"
+                   BackgroundColor="DarkSalmon"
+                   TextColor="White"
+                   ScaleY="1.2"
+                   
+                   />
+            <Label Text="Presione una imagen para votar"
+                   HorizontalTextAlignment="Center"
+                   FontSize="20"
+                   BackgroundColor="#FEFF8B"
+                   />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="8" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="8" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="20" />
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+                <ImageButton x:Name="btngato1"
+                             Grid.Column="1"
+                             Grid.Row="0"
+                             Source=""
+                             Clicked="Handlerbtn"
+                             BackgroundColor="Transparent" />
+                <Label x:Name="gato1Nombre"
+                       Grid.Column="1"
+                       Grid.Row="1"
+                       Text=""/>
+                <Label x:Name="gato1Duenio"
+                       Grid.Column="1"
+                       Grid.Row="2"
+                       Text=""/>
+                <Label x:Name="gato1Personalidad"
+                       Grid.Column="1"
+                       Grid.Row="3"
+                       Text=""/>
+                <ImageButton x:Name="btngato2"
+                             Grid.Column="2"
+                             Grid.Row="0"
+                             Source=""
+                             Clicked="Handlerbtn"
+                             BackgroundColor="Transparent"
+            />
+                <Label x:Name="gato2Nombre"
+                       Grid.Column="2"
+                       Grid.Row="1"
+                       Text=""/>
+                <Label x:Name="gato2Duenio"
+                       Grid.Column="2"
+                       Grid.Row="2"
+                       Text=""/>
+                <Label x:Name="gato2Personalidad"
+                       Grid.Column="2"
+                       Grid.Row="3"
+                       Text=""/>
+
+            </Grid>
+            <Label x:Name="txtPorBoton1"
+                   Text="Ningún gato es mejor que otro. "
+                   FontSize="20"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="FillAndExpand"
+                   TextColor="White"
+                   BackgroundColor="DarkRed"
+                   IsVisible="False"/>
+            
+            <Label x:Name="txtPorBoton2"
+                   Text="No a la discriminacion Gatuna"
+                   FontSize="30" 
+                   TextColor="White"
+                   BackgroundColor="DarkRed"
+                   TextDecorations="Underline"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="FillAndExpand"
+                   IsVisible="False" />
+        </StackLayout>
+    
+</ContentPage>

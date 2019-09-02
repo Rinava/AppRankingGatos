@@ -2,13 +2,27 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AppRankingGatos"
-             x:Class="AppRankingGatos.MainPage">
+             x:Class="AppRankingGatos.MainPage"
+             Title="AppRankingGatos" >
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <Button x:Name="btnListaGatos" 
+                Text="Ver Listado de Gatos"
+                BackgroundColor="LightSalmon"
+                TextColor="LemonChiffon"
+                FontSize="Large"
+                Clicked="HandlerClickLista"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"/>
+        
+        <Button x:Name="btnJuego"
+                Text="Votar al Mejor Gato"
+                BackgroundColor="LemonChiffon"
+                TextColor="LightSalmon"
+                FontSize="Large"
+                Clicked="HandlerClickJuego"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"/>
     </StackLayout>
 
 </ContentPage>
